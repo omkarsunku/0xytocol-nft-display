@@ -1,38 +1,81 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.walletSection {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.walletAddress {
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.connectBtn, .disconnectBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connectBtn {
+  background-color: #4CAF50;  /* Green */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.connectBtn:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disconnectBtn {
+  background-color: #f44336;  /* Red */
+  color: white;
+}
+
+.disconnectBtn:hover {
+  background-color: #da190b;
+}
+
+.nftTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nftTable th, .nftTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.nftTable th {
+  background-color: #f2f2f2;
+}
+
+.nft-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
